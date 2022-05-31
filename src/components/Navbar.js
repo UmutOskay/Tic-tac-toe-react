@@ -31,11 +31,19 @@ const Navbar = () => {
       path: "/developers",
     },
   ];
+  const comment_path = [
+    {
+      name: "Comments",
+      path: "/comments",
+    },
+  ];
+
   return (
     <AppBar position="fixed">
       <Toolbar className={classes.navbarContainer}>
         <Logo />
         {renderNavLinks(classes, dev_path)}
+        {renderNavLinks(classes, comment_path)}
       </Toolbar>
     </AppBar>
   );

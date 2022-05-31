@@ -5,6 +5,7 @@ import NavBar from "./components/Navbar";
 import HomePage from "./views/HomePage";
 import DeveloperPage from "./views/DeveloperPage";
 import TicTacToePage from "./views/TicTacToePage";
+import CommentsPage from "./views/CommentsPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" element={<HomePage />} />
         <Route path="/developers" element={<DeveloperPage />} />
         <Route path="/tic_tac_toe" element={<TicTacToePage />} />
+        <Route path="/comments" element={<CommentsPage />} />
       </Routes>
     </Router>
   );
