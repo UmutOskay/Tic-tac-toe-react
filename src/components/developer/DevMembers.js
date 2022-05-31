@@ -5,7 +5,8 @@ import umut_pp from "../../styles/images/umut_pp.jpeg";
 import mali_pp from "../../styles/images/mali.jpeg";
 import deniz_pp from "../../styles/images/deniz.jpeg";
 import developers from "../../constants/developers.json";
-
+import axios from "axios";
+//var developers = [];
 const useStyles = makeStyles((theme) => ({
   teamMembersContainer: {
     marginTop: "14.5vh",
@@ -26,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
 
 const DevMembers = () => {
   const classes = useStyles();
+  axios.get("http://localhost:3000/developers").then((res) => {
+    developers = res.data;
+  });
   return (
     <div className={classes.teamMembersContainer}>
       <div className={classes.titleContainer}>

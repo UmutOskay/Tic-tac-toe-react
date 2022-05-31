@@ -1,6 +1,9 @@
 import React from "react";
 import { makeStyles, Grid, Typography } from "@material-ui/core";
 import Games from "../components/home/Games";
+import Feedback from "../components/home/Feedback";
+
+
 
 const useStyles = makeStyles((theme) => ({
   introContainer: {
@@ -42,6 +45,9 @@ const HomePage = () => {
           {renderGameImageLinks(games)}
         </div>
       </Grid>
+      <Grid>
+      <Feedback/>
+      </Grid>
       <Grid item={true} xs={1} md={2} />
     </>
   );
@@ -52,5 +58,7 @@ const renderGameImageLinks = (links) => {
     return <Games key={i} link={link} />;
   });
 };
+
+
 
 export default HomePage;
