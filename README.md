@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# CS 391-Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+DumDum Games is a webpage that includes two games where you can play with them. One of the games is Tic-Tac-Toe and the other one is Rock-Paper-Scissors. However, Rock-Paper-Scissors is now in the developing process. The purpose of this project is designing a game page for the users and collecting feedback from them about the page. It is a developing web page so that we need feedback. Users can leave a feedback about existing games and they can make new game request. In addition, users can display the creators of this web page and can contact them via LinkedIn and Github.
 
-## Available Scripts
+## Project Members & Responsibilities
+---
 
-In the project directory, you can run:
+|Name|Responsibility|
+|----|--------------|
+|Deniz Yeniçeri| Created Developer Page and Comment Page|
+|Umut Oskay| Created Homepage UI including Tic-Tac-Toe game and the Navbar with metaril-ui component|
+|Muhammed Ali Kumaşoğlu| Created the form section in Home Page and made Rest service|
 
-### `npm start`
+## Instructions for running the project
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Download and install Node.js from https://nodejs.org/en/download/ 
+2. Download files in the repository
+* Go to https://github.com/UmutOskay/Tic-tac-toe-react and download or clone the related files.
+3. Find the directory where you downloaded the files and open it in command prompt or terminal.
+4. Run  `npm install --force `
+5. Run  `npm run start `
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Libraries
+---
 
-### `npm test`
+Imported libraries are listed below.
+1. @material-ui/core
+* In order to design the web page, we used metarial UI's features.
+2. @fortawesome/react-fontawesome
+3. @fortawesome/free-brands-svg-icons
+* In order to use icons, we used https://fontawesome.com/ 
+4. react-router-dom
+5. axios
+* In order to make HTTP request, we used axios library.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Usage Scenarios
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+When you open the web page by following the steps in the instructions section, Home Page will appear.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* To select a game, press the game's image. For instance, if you want to play Tic-Tac-Toe, you should press below image.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![tic_tac_toe_icon](src/styles/images/tic_tac_toe_icon.png)
 
-### `npm run eject`
+* If you want to leave feedback about the existing games and request a new game, you should use the form in Homepage.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* In the Navbar section, you can display developers' page. Also, you can go to comments page and see other users comment about the project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* On the Developers page, you can display the developers of this web page. LinkedIn and Github icons which will direct you to developers' accounts are below the their photos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* There is a game console icon in Navbar. If you want to go back the Home page, you can press this icon. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![custom_icon](src/styles/images/custom_icon.jpeg)
 
-## Learn More
+* If you wish to see other users' comments, you can click Comments in Navbar.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
