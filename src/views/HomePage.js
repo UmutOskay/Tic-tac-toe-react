@@ -7,13 +7,13 @@ const HomePage = () => {
   return (
     <Container className="d-flex justify-content-around p-5">
           <Row className="mt-5">
-          <Col xs={8} md={4} >
+          <Col xs={12} md={6} lg={4}>
           <Games key={0} link={"rock_paper_scissors"} />
           </Col>
-          <Col xs={8} md={4} >
+          <Col xs={12} md={6} lg={4} >
           <Games key={1} link={"tic_tac_toe"} />
           </Col>
-          <Col xs={8} md={4}>
+          <Col xs={12} md={6} lg={4}>
           <Feedback/>
           </Col>
           </Row>
