@@ -1,66 +1,45 @@
 import React from "react";
-import { makeStyles, Grid } from "@material-ui/core";
-import DevMembers from "../components/developer/DevMembers";
-import axios from "axios";
+import { Grid } from "@material-ui/core";
+import axios from "axios"
+import CommentCard from "../components/home/comment";
 
-const useStyles = makeStyles((theme) => ({
-  teamContainer: {
-    display: "flex",
-    width: "100vw",
-  },
-}));
+class CommentsPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      comments: [],
+    };
 
-export const CommentsPage = () => {
-  const classes = useStyles();
-  const baseURL = "https://jsonplaceholder.typicode.com/posts/1";
-  const [post, setPost] = React.useState(null);
-  React.useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPost(response.data);
-    });
-  }, []);
+    axios.get("http://localhost:3000/comments").then((response) =>{
+    this.setState({comments: response.data})}
+    );
 
+}
+
+  render() {
+    return (
+     <>
+     <h1> Comments </h1>
+     <Grid container spacing={10} >
+       
+      {table_filler(this.state.comments)}
+        
+    </Grid>
+    </>
+    );
+  }
+}
+function table_filler(data){
+  let items = [];
   
-  return (
-    <div className={classes.teamContainer}>
-      <Grid item={true} xs={1} md={2} />
-      <Grid item={true} xs={10} md={8}>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <h1> Comments </h1>
-    {console.log(post, typeof(post))}
-    <div >
-      <table >
-        <tr>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>Comments</th>
-        </tr>
-        <tr>
-          <td>Anom</td>
-          <td>Oskay</td>
-          <td>Like</td>
-        </tr>
-        <tr>
-          <td>Megha</td>
-          <td>Yeniçeri</td>
-          <td>Like</td>
-        </tr>
-        <tr>
-          <td>Subham</td>
-          <td>Mali</td>
-          <td>Didn't like</td>
-        </tr>
-      </table>
-    </div>
+      for(var i = 0; i < data.length; i++){
+        items.push(
+         <CommentCard  data={data[i]} />
+          );
+        }
 
+    return items;
+}
 
-      </Grid>
-      <Grid item={true} xs={1} md={2} />
-    </div>
-  );
-};
 
 export default CommentsPage;

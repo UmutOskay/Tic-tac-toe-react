@@ -2,6 +2,7 @@ import "../styles/css/TicTacToe.css";
 import { useState, useEffect } from "react";
 import Square from "../components/game/Square";
 import { Patterns } from "../Patterns";
+import React from "react";
 
 const TicTacToePage = () => {
   const [board, setBoard] = useState(["", "", "", "", "", "", "", "", ""]);
