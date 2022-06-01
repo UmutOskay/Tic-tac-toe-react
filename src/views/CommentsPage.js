@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles, Grid } from "@material-ui/core";
 import DevMembers from "../components/developer/DevMembers";
+import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   teamContainer: {
@@ -11,6 +12,15 @@ const useStyles = makeStyles((theme) => ({
 
 export const CommentsPage = () => {
   const classes = useStyles();
+  const baseURL = "https://jsonplaceholder.typicode.com/posts/1";
+  const [post, setPost] = React.useState(null);
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+    });
+  }, []);
+
+  
   return (
     <div className={classes.teamContainer}>
       <Grid item={true} xs={1} md={2} />
@@ -20,7 +30,7 @@ export const CommentsPage = () => {
     <br></br>
     <br></br>
     <h1> Comments </h1>
-
+    {console.log(post, typeof(post))}
     <div >
       <table >
         <tr>
