@@ -22,7 +22,7 @@ DumDum Games is a webpage that includes two games where you can play with them. 
 5.  Run  `npm install --force `
 6.  Run  'npm install -g json-server'
 7.  Run  'json-server --watch db.json'
-8.  Open another terminal
+8.  Open another terminal for use another port for react app because json server uses one port
 9.  Run  `npm run start `
 10. Say 'y' to usage of port 3001
 
