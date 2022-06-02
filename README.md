@@ -19,8 +19,10 @@ DumDum Games is a webpage that includes two games where you can play with them. 
 2. Download files in the repository
 * Go to https://github.com/UmutOskay/Tic-tac-toe-react and download or clone the related files.
 3. Find the directory where you downloaded the files and open it in command prompt or terminal.
-4. Run  `npm install --force `
-5. Run  `npm run start `
+5. Run  `npm install --force `
+6. Run  'json-server --watch db.json'
+7. Run  `npm run start `
+8.  Say 'y' to usage of port 3001
 
 ## Libraries
 ---
