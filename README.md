@@ -34,10 +34,12 @@ Imported libraries are listed below.
 * In order to design the web page, we used metarial UI's features.
 2. @fortawesome/react-fontawesome
 3. @fortawesome/free-brands-svg-icons
+4. Bootstrap Forms
 * In order to use icons, we used https://fontawesome.com/ 
-4. react-router-dom
-5. axios
+5. react-router-dom
+6. axios
 * In order to make HTTP request, we used axios library.
+7. JSON server wiht REST API
 
 
 ## Usage Scenarios
