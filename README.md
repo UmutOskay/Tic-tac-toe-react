@@ -8,9 +8,9 @@ DumDum Games is a webpage that includes two games where you can play with them. 
 
 |Name|Responsibility|
 |----|--------------|
-|Deniz Yeniçeri| Created Developer Page and Comment Page|
-|Umut Oskay| Created Homepage UI including Tic-Tac-Toe game and the Navbar with metaril-ui component|
-|Muhammed Ali Kumaşoğlu| Created the form section in Home Page and made Rest service|
+|Deniz Yeniçeri| Created Developer Page, the Form Section and Validation in Home Page|
+|Umut Oskay| Created Homepage UI including Tic-Tac-Toe game and the Navbar with Material-UI component|
+|Muhammed Ali Kumaşoğlu| Created Comment Page and made Rest services|
 
 ## Instructions for running the project
 ---
